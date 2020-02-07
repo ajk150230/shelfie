@@ -1,0 +1,1 @@
+UPDATE inventory SET name =$1 , price =$2, city = $3 WHERE product_id = $4
