@@ -31,7 +31,7 @@ export default class Form extends Component {
     updateRequest(){
         axios
             .put(`/api/inventory/${this.state.id}`, this.state)
-            .then(res = this.props.getRequest(res.data))
+            .then(res => this.props.getRequest(res.data))
             .catch(err => console.log(err))
     }
     render() {
